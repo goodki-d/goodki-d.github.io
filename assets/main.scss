@@ -1,0 +1,127 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+body{
+    font-family: "Oswald";
+}
+
+.post-link{
+    color: black !important;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+
+// 
+
+
+.home-title a{
+  font-weight: 900; 
+  font-size: 4rem;
+  text-decoration: none !important;
+  color: black;
+}
+
+
+@media (max-width:481px){
+  .home-title a{
+    font-size: 3rem;
+  }
+}
+
+.home-banner-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 36px;
+  width: 80%;
+}
+
+@media (max-width:481px){
+  .home-banner-wrapper{
+    width: 100%;
+  }
+}
+
+.home-banner{
+  width: 100%;
+}
+
+
+// 
+
+
+.rtl-text-1 {
+  // direction: rtl; 
+  white-space: nowrap; 
+  animation: scroll-rtl 20s linear infinite;
+}
+
+.rtl-text-2 {
+  // direction: rtl; 
+  white-space: nowrap; 
+  animation: scroll-rtl 22s linear infinite;
+}
+.rtl-text-3 {
+  // direction: rtl; 
+  white-space: nowrap; 
+  animation: scroll-rtl 16s linear infinite;
+}
+
+@keyframes scroll-rtl {
+  from {
+    transform: translateX(100%); 
+  }
+  to {
+    transform: translateX(-200%); 
+  }
+}
+
+@media (max-width:481px){
+  @keyframes scroll-rtl {
+    from {
+      transform: translateX(100%); 
+    }
+    to {
+      transform: translateX(-400%); 
+    }
+  }
+}
+// 
+
+
+.patience{
+  background-color: black;
+}
+
+.disc {
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}
+
+
+// DEBUG HELP
+
+
+// div {
+//     outline: 4px solid red !important;
+// }
+
+// div:after {
+//     content: attr(class);
+//     position: absolute;
+// }
