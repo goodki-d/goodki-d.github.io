@@ -1,0 +1,1 @@
+Some put it on the Devil when they fall short I put it on my ego, lord of all lords
