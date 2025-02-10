@@ -60,3 +60,8 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+
+collections:
+  articles:
+    output: true
+    permalink: /:name
