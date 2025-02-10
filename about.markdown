@@ -1,4 +1,3 @@
 ---
 layout: patience
-# layout: home  
 ---
