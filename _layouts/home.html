@@ -22,13 +22,36 @@
 
       <div class="featured-articles-wrapper">
         SIDE A
+
+        {% assign sideA = site.articles | where: 'side', 'A'%}
         
         <ol>
-          {% for article in site.articles %}
-          <li><a href="{{article.url}}" class="article-link"><p class="article-title">{{ article.title }}</p></a></li>
+          {% for article in sideA %}
+          <li>
+            <a href="{{article.url}}" class="article-link">
+              <p class="article-title">{{ article.title }}
+              </p>
+            </a>
+          </li>
           {% endfor %}
         </ol>
+
+        <!-- SIDE B
+
+        {% assign sideB = site.articles | where: 'side', 'B'%}
         
+        <ol>
+          {% for article in sideB %}
+          <li>
+            <a href="{{article.url}}" class="article-link">
+              <p class="article-title">{{ article.title }}
+              </p>
+            </a>
+          </li>
+          {% endfor %}
+        </ol> -->
+
+        <!-- BONUS DISC -->
 
       
       </div>
